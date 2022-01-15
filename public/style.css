@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8b8b8b36;
+}
+
+.number-box {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.number {
+  box-shadow: inset 0 0 9px 4px #89b2ff;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffff8;
+}
+
+.users {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 180px;
+}
+
+.sensors-box {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sensors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0 0 9px 4px #89b2ff;
+  border-radius: 10px;
+  height: 40vh;
+  width: 80vw;
+  background-color: #fffff8;
+  padding: 5px 40px 5px 40px;
+}
+
+.sensor1,
+.sensor2 {
+  border-radius: 10px;
+  height: 80%;
+  width: 140px;
+  background-color: #0046a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle1,
+.circle2 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.sensor1::before {
+  content: "Sensor +1";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  color: #fff;
+}
+.sensor2::before {
+  content: "Sensor -1";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  color: #fff;
+}
+
+.diagramm-box {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagramm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: inset 0 0 9px 4px #89b2ff;
+  border-radius: 10px;
+  height: 40vh;
+  width: 80vw;
+  background-color: #fffff8;
+  padding: 5px;
+}
+
+.entered {
+  position: relative;
+  width: 85%;
+  height: 40%;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-end;
+}
+
+.line {
+  display: flex;
+  align-items: flex-end;
+}
+
+.entered::before {
+  position: absolute;
+  left: -57px;
+  top: 50px;
+  content: "Entered";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  transform: rotate(270deg);
+}
+
+.entered::after {
+  position: absolute;
+  content: " ";
+  bottom: -7px;
+  right: -16px;
+  border: 6px solid transparent;
+  border-left: 11px solid black;
+}
+
+.left {
+  position: relative;
+  width: 85%;
+  height: 40%;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.left::before {
+  position: absolute;
+  left: -35px;
+  top: 50px;
+  content: "Left";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  transform: rotate(270deg);
+}
+
+.left::after {
+  position: absolute;
+  content: " ";
+  bottom: -7px;
+  right: -16px;
+  border: 6px solid transparent;
+  border-left: 11px solid black;
+}
+
+.graph {
+  height: 30%;
+  width: 50px;
+}
+
+.graph-plus {
+  background-color: greenyellow;
+}
+
+.graph-minus {
+  background-color: red;
+}
